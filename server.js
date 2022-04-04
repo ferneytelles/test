@@ -5,7 +5,23 @@ const app = express ();
 const DIST_FOLDER = process . cwd () + '/dist' ;
 const PORT = process . env . PORT || 8080 ;
 
-const BOTS = rendertron.botUserAgents.concat('googlebot');
+const BOTS = rendertron.botUserAgents.concat(
+  'googlebot',
+  'W3C_Validator', 
+  'baiduspider', 
+  'bingbot', 
+  'embedly', 
+  'facebookexternalhit', 
+  'linkedinbot', 
+  'outbrain', 
+  'pinterest', 
+  'quora link preview', 
+  'rogerbot', 
+  'showyoubot', 
+  'slackbot', 
+  'twitterbot', 
+  'vkShare',
+);
 const BOT_UA_PATTERN = new RegExp(BOTS.join('|'), 'i');
 
 app.set('view engine', 'html');
