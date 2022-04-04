@@ -11,6 +11,10 @@ export class PruebaComponent implements OnInit {
 
   ngOnInit(): void {
     this.share();
+    const image: any = document.querySelector('#openGraphImage');
+    if (image) {
+      image.content = 'https://rickandmortyapi.com/api/character/avatar/3.jpeg';
+    }
   }
 
   share(): void {
