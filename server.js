@@ -20,7 +20,7 @@ const BOTS = rendertron.botUserAgents.concat(
   'showyoubot', 
   'slackbot', 
   'twitterbot', 
-  'vkShare',
+  'vkShare', 
 );
 const BOT_UA_PATTERN = new RegExp(BOTS.join('|'), 'i');
 
